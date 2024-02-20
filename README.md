@@ -1,49 +1,93 @@
-# Symfony Docker
+<p align="center"><a href="https://symfony.com" target="_blank">
+    <img src="https://symfony.com/logos/symfony_dynamic_01.svg" alt="Symfony Logo">
+</a></p>
 
-A [Docker](https://www.docker.com/)-based installer and runtime for the [Symfony](https://symfony.com) web framework,
-with [FrankenPHP](https://frankenphp.dev) and [Caddy](https://caddyserver.com/) inside!
+[Symfony][1] is a **PHP framework** for web and console applications and a set
+of reusable **PHP components**. Symfony is used by thousands of web
+applications and most of the [popular PHP projects][2].
 
-![CI](https://github.com/dunglas/symfony-docker/workflows/CI/badge.svg)
+Installation
+------------
 
-## Getting Started
+* [Install Symfony][4] with Composer (see [requirements details][3]).
+* Symfony follows the [semantic versioning][5] strictly, publishes "Long Term
+  Support" (LTS) versions and has a [release process][6] that is predictable and
+  business-friendly.
 
-1. If not already done, [install Docker Compose](https://docs.docker.com/compose/install/) (v2.10+)
-2. Run `docker compose build --no-cache` to build fresh images
-3. Run `docker compose up --pull always -d --wait` to start the project
-4. Open `https://localhost` in your favorite web browser and [accept the auto-generated TLS certificate](https://stackoverflow.com/a/15076602/1352334)
-5. Run `docker compose down --remove-orphans` to stop the Docker containers.
+Sponsor
+-------
 
-## Features
+Symfony 7.1 is [backed][27] by
+- [Rector][29]
 
-* Production, development and CI ready
-* Just 1 service by default
-* Blazing-fast performance thanks to [the worker mode of FrankenPHP](https://github.com/dunglas/frankenphp/blob/main/docs/worker.md) (automatically enabled in prod mode)
-* [Installation of extra Docker Compose services](docs/extra-services.md) with Symfony Flex
-* Automatic HTTPS (in dev and prod)
-* HTTP/3 and [Early Hints](https://symfony.com/blog/new-in-symfony-6-3-early-hints) support
-* Real-time messaging thanks to a built-in [Mercure hub](https://symfony.com/doc/current/mercure.html)
-* [Vulcain](https://vulcain.rocks) support
-* Native [XDebug](docs/xdebug.md) integration
-* Super-readable configuration
+**Rector** helps successful and growing companies to get the most of the code
+they already have. Including upgrading to the latest Symfony LTS. They deliver
+automated refactoring, reduce maintenance costs, speed up feature delivery, and
+transform legacy code into a strategic asset. They can handle the dirty work,
+so you can focus on the features.
 
-**Enjoy!**
+Help Symfony by [sponsoring][28] its development!
 
-## Docs
+Documentation
+-------------
 
-1. [Build options](docs/build.md)
-2. [Using Symfony Docker with an existing project](docs/existing-project.md)
-3. [Support for extra services](docs/extra-services.md)
-4. [Deploying in production](docs/production.md)
-5. [Debugging with Xdebug](docs/xdebug.md)
-6. [TLS Certificates](docs/tls.md)
-7. [Using a Makefile](docs/makefile.md)
-8. [Troubleshooting](docs/troubleshooting.md)
-9. [Updating the template](docs/updating.md)
+* Read the [Getting Started guide][7] if you are new to Symfony.
+* Try the [Symfony Demo application][23] to learn Symfony in practice.
+* Discover Symfony ecosystem in detail with [Symfony The Fast Track][26].
+* Master Symfony with the [Guides and Tutorials][8], the [Components docs][9]
+  and the [Best Practices][10] reference.
 
-## License
+Community
+---------
 
-Symfony Docker is available under the MIT License.
+* [Join the Symfony Community][11] and meet other members at the [Symfony events][12].
+* [Get Symfony support][13] on GitHub Discussions, Slack, etc.
+* Follow us on [GitHub][14], [Twitter][15] and [Facebook][16].
+* Read our [Code of Conduct][24] and meet the [CARE Team][25].
 
-## Credits
+Contributing
+------------
 
-Created by [Kévin Dunglas](https://dunglas.dev), co-maintained by [Maxime Helias](https://twitter.com/maxhelias) and sponsored by [Les-Tilleuls.coop](https://les-tilleuls.coop).
+Symfony is an Open Source, community-driven project with thousands of
+[contributors][19]. Join them [contributing code][17] or [contributing documentation][18].
+
+Security Issues
+---------------
+
+If you discover a security vulnerability within Symfony, please follow our
+[disclosure procedure][20].
+
+About Us
+--------
+
+Symfony development is led by the [Symfony Core Team][22]
+and supported by [Symfony contributors][19].
+
+[1]: https://symfony.com
+[2]: https://symfony.com/projects
+[3]: https://symfony.com/doc/current/reference/requirements.html
+[4]: https://symfony.com/doc/current/setup.html
+[5]: https://semver.org
+[6]: https://symfony.com/doc/current/contributing/community/releases.html
+[7]: https://symfony.com/doc/current/page_creation.html
+[8]: https://symfony.com/doc/current/index.html
+[9]: https://symfony.com/doc/current/components/index.html
+[10]: https://symfony.com/doc/current/best_practices/index.html
+[11]: https://symfony.com/community
+[12]: https://symfony.com/events/
+[13]: https://symfony.com/support
+[14]: https://github.com/symfony
+[15]: https://twitter.com/symfony
+[16]: https://www.facebook.com/SymfonyFramework/
+[17]: https://symfony.com/doc/current/contributing/code/index.html
+[18]: https://symfony.com/doc/current/contributing/documentation/index.html
+[19]: https://symfony.com/contributors
+[20]: https://symfony.com/security
+[22]: https://symfony.com/doc/current/contributing/code/core_team.html
+[23]: https://github.com/symfony/symfony-demo
+[24]: https://symfony.com/coc
+[25]: https://symfony.com/doc/current/contributing/code_of_conduct/care_team.html
+[26]: https://symfony.com/book
+[27]: https://symfony.com/backers
+[28]: https://symfony.com/sponsor
+[29]: https://getrector.com
